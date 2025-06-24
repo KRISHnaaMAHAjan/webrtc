@@ -2,14 +2,13 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
-import { app, analytics } from './firebase.js';
+
+import { firestore } from './firebase.js';
 
 
-import socket from './socket';
+const callDoc = firestore.collection('calls').doc();
 
-socket.on("connect", () => {
-  console.log("✅ Connected to backend:", socket.id);
-});
+
 
 const servers = {
   iceServers: [
