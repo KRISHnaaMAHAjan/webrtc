@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import { app, analytics } from './firebase.js';
 
-=c
 import socket from './socket';
 
 const servers = {

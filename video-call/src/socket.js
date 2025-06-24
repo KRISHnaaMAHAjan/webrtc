@@ -1,6 +1,6 @@
 // client/src/socket.js
 import { io } from "socket.io-client";
 
-const socket = io("https://webrtc-v33c.onrender.com"); // ✅ Your Render backend URL
+const socket = "https://webrtc-v33c.onrender.com"; 
 
 export default socket;
