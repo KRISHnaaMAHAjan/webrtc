@@ -4,7 +4,12 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import { app, analytics } from './firebase.js';
 
+
 import socket from './socket';
+
+socket.on("connect", () => {
+  console.log("✅ Connected to backend:", socket.id);
+});
 
 const servers = {
   iceServers: [
